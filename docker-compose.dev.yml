@@ -6,37 +6,36 @@ services:
     volumes: 
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
-      - "todo-frontend"
-      - "todo-backend"
+      - "frontend"
+      - "backend"
     ports:
-      - 8081:80
-    container_name: reverse-proxy
-  todo-frontend:
-    image: todo-frontend-dev
+      - 8080:80
+    container_name: timed-unlock-reverse-proxy
+  frontend:
+    image: timed-unlock-frontend-dev
     build:
-      context: ./todo-frontend/
+      context: ./frontend/
       dockerfile: dev.Dockerfile
     volumes:
-      - ./todo-frontend/:/usr/src/app
+      - ./frontend/:/usr/src/app
     environment:
-      - REACT_APP_BACKEND_URL=api/
+      - REACT_APP_BACKEND_URL=/api/
       - CHOKIDAR_USEPOLLING=true
-  todo-backend:
-    image: todo-backend-dev
+  backend:
+    image: timed-unlock-backend-dev
     build:
-      context: ./todo-backend/
+      context: ./backend/
       dockerfile: dev.Dockerfile
     volumes:
-      - ./todo-backend:/usr/src/app
+      - ./backend:/usr/src/app
     ports:
       - 3001:3001
     depends_on:
       - "mongo"
-      - "redis"
     environment:
-      - REDIS_URL=redis://redis:6379
       - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
       - CHOKIDAR_USEPOLLING=true
+      - SECRET=SOMETHING_VERY_SECRET_FOR_JWT_SIGNING
   mongo:
     image: mongo
     environment:
@@ -44,13 +43,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_DATABASE: the_database
     volumes:       
-      - ./todo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
       - mongo_data:/data/db
-  redis:
-    image: redis
-    command: ['redis-server', '--appendonly', 'yes']
-    volumes:
-      - ./todo-backend/redis_data:/data
 
 volumes:
   mongo_data: 
