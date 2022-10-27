@@ -1,0 +1,86 @@
+Script started on 2021-10-14 21:33:42+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="151" LINES="62"]
+]0;eetu@LAPTOP-NB0N8BK8: /mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[01;32meetu@LAPTOP-NB0N8BK8[00m:[01;34m/mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[00m$ exitset MONGO_URL=mongodb://localhost:3456/the_database && npm run dev[A]0;eetu@LAPTOP-NB0N8BK8: /mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[01;32meetu@LAPTOP-NB0N8BK8[00m:[01;34m/mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[00m$ node -v[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMONGO_URL=mongodb://localhost:3456/the_database npm run dev[A]0;eetu@LAPTOP-NB0N8BK8: /mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[01;32meetu@LAPTOP-NB0N8BK8[00m:[01;34m/mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwddocker-compose -f docker-compose.dev.yml upup[Kls[Kdocker-compose up pull node:16[4Pig leijuva.net[2Pdocker.ioleijuva.netocker pull node:16[2P-compose upls[Kdocker-compose up-f docker-compose.dev.yml up[K[3Ppwd[1PlsMONGO_URL=mongodb://localhost:3456/the_database npm run dev[A]0;eetu@LAPTOP-NB0N8BK8: /mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[01;32meetu@LAPTOP-NB0N8BK8[00m:[01;34m/mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[00m$ node -v[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cset MONGO_URL=mongodb://localhost:3456/the_database && npm run dev[A]0;eetu@LAPTOP-NB0N8BK8: /mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[01;32meetu@LAPTOP-NB0N8BK8[00m:[01;34m/mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdocker exec -it todo-backend-mongo-1 bash
+]0;root@a1a1994f0184: /root@a1a1994f0184:/# mongo
+MongoDB shell version v5.0.3
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("6a38012e-fb86-4f84-a8de-07c9fb159176") }
+MongoDB server version: 5.0.3
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+We recommend you begin using "mongosh".
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+> show dbs[3G[Jshow dbs[11G
+> [3G[J[3G^C
+bye
+]0;root@a1a1994f0184: /root@a1a1994f0184:/# mongo -u root -p example
+MongoDB shell version v5.0.3
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("c3300bbf-927a-4abd-939a-970306d1db00") }
+MongoDB server version: 5.0.3
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+We recommend you begin using "mongosh".
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting: 
+        2021-10-14T18:33:24.451+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+        2021-10-14T18:33:26.544+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> db.todos.find()[3G[Jdb.todos.find[1;34m([0m)[17G[3G[Jdb.todos.find([1;34m{[0m)[18G[3G[Jdb.todos.find[1;34m([0m{})[19G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find[1;34m([0m{})[19G[3G[Jdb.todos.find([1;34m{[0m})[18G[3G[Jdb.todos.find[1;34m([0m{})[19G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find[1;34m([0m{})[19G[3G[Jdb.todos.find([1;34m{[0m})[18G[3G[Jdb.todos.find[1;34m([0m{})[19G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("61643cf9288bff0e5931b2ae"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("61643cf9288bff0e5931b2af"), "text" : "hey", "done" : false }
+> db.todos.insertOne()[3G[Jdb.todos.insertOne[1;34m([0m)[22G[3G[Jdb.todos.insertOne([1;34m{[0m)[23G[3G[Jdb.todos.insertOne[1;34m([0m{})[24G[3G[Jdb.todos.insertOne([1;34m{[0m})[23G[3G[Jdb.todos.insertOne([1;34m{[0mt})[24G[3G[Jdb.todos.insertOne([1;34m{[0mte})[25G[3G[Jdb.todos.insertOne([1;34m{[0mtex})[26G[3G[Jdb.todos.insertOne([1;34m{[0mtext})[27G[3G[Jdb.todos.insertOne([1;34m{[0mtex})[26G[3G[Jdb.todos.insertOne([1;34m{[0mte})[25G[3G[Jdb.todos.insertOne([1;34m{[0mt})[24G[3G[Jdb.todos.insertOne([1;34m{[0m})[23G[3G[Jdb.todos.insertOne([1;34m{[0m"})[24G[3G[Jdb.todos.insertOne([1;34m{[0m"t})[25G[3G[Jdb.todos.insertOne([1;34m{[0m"te})[26G[3G[Jdb.todos.insertOne([1;34m{[0m"tex})[27G[3G[Jdb.todos.insertOne([1;34m{[0m"text})[28G[3G[Jdb.todos.insertOne([1;34m{[0m"text"})[29G[3G[Jdb.todos.insertOne([1;34m{[0m"text":})[30G[3G[Jdb.todos.insertOne([1;34m{[0m"text": })[31G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "})[32G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "T})[33G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Te})[34G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Tes})[35G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test})[36G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test })[37G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test t})[38G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test ta})[39G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test tas})[40G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task})[41G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task"})[42G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task",})[43G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", })[44G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", d})[45G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", do})[46G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", don})[47G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", done})[48G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", don})[47G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", do})[46G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", d})[45G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", })[44G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "})[45G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "d})[46G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "do})[47G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "don})[48G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done})[49G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done"})[50G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done":})[51G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": })[52G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": "})[53G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": })[52G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": f})[53G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": fa})[54G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": fal})[55G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": fals})[56G[3G[Jdb.todos.insertOne([1;34m{[0m"text": "Test task", "done": false})[57G[3G[Jdb.todos.insertOne[1;34m([0m{"text": "Test task", "done": false})[58G[3G[Jdb.todos.insertOne({"text": "Test task", "done": false})[59G[3G[Jdb.todos.insertOne({"text": "Test task", "done": false})[59G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("616878b61ac3eb744a0e150a")
+}
+> [3G[Jdb.todos.insertOne({"text": "Test task", "done": false})[59G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("61643cf9288bff0e5931b2ae"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("61643cf9288bff0e5931b2af"), "text" : "hey", "done" : false }
+{ "_id" : ObjectId("616878b61ac3eb744a0e150a"), "text" : "Test task", "done" : false }
+> [3G[J[3G^C
+bye
+]0;root@a1a1994f0184: /root@a1a1994f0184:/# exit
+exit
+]0;eetu@LAPTOP-NB0N8BK8: /mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[01;32meetu@LAPTOP-NB0N8BK8[00m:[01;34m/mnt/c/Users/eetum/Desktop/part12-container-applications-main/todo-app/todo-backend[00m$ exit
+exit
+
+Script done on 2021-10-14 21:37:12+03:00 [COMMAND_EXIT_CODE="0"]
